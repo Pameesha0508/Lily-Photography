@@ -45,7 +45,10 @@ function buildFilters() {
 
 function openModal(i) {
   lastFocus = document.activeElement;
-  document.getElementById('modalArt').style.background = art(i.colors);
+  var mArt = document.getElementById('modalArt');
+      mArt.style.background = art(i);
+      mArt.setAttribute('role', 'img');
+      mArt.setAttribute('aria-label', i.alt || i.title);
   document.getElementById('modalTitle').textContent = i.title;
   document.getElementById('modalMeta').textContent = i.location + ', ' + i.year;
   document.getElementById('modalText').textContent = i.description;
