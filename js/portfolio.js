@@ -8,7 +8,8 @@ function art(item) {
   if (item.image) {
     return 'url("' + item.image + '") center / cover no-repeat';
   }
-  return 'linear-gradient(160deg,' + item.colors[0] + ',' + item.colors[1] + ')';
+  var c = item.colors || ['#5c7c8a', '#14262b'];
+  return 'linear-gradient(160deg,' + c[0] + ',' + c[1] + ')';
 }
 
 function render(category) {
@@ -19,9 +20,9 @@ function render(category) {
       b.className = 'card work';
       b.innerHTML = '<div class="work-art"></div><div class="work-info"><h3></h3><p class="meta"></p></div>';
       var cardArt = b.querySelector('.work-art');
-          cardArt.style.background = art(i);
-          cardArt.setAttribute('role', 'img');
-          cardArt.setAttribute('aria-label', i.alt || i.title);
+      cardArt.style.background = art(i);
+      cardArt.setAttribute('role', 'img');
+      cardArt.setAttribute('aria-label', i.alt || i.title);
       b.querySelector('h3').textContent = i.title;
       b.querySelector('.meta').textContent = i.category + ', ' + i.year;
       b.addEventListener('click', function () { openModal(i); });
@@ -46,9 +47,9 @@ function buildFilters() {
 function openModal(i) {
   lastFocus = document.activeElement;
   var mArt = document.getElementById('modalArt');
-      mArt.style.background = art(i);
-      mArt.setAttribute('role', 'img');
-      mArt.setAttribute('aria-label', i.alt || i.title);
+  mArt.style.background = art(i);
+  mArt.setAttribute('role', 'img');
+  mArt.setAttribute('aria-label', i.alt || i.title);
   document.getElementById('modalTitle').textContent = i.title;
   document.getElementById('modalMeta').textContent = i.location + ', ' + i.year;
   document.getElementById('modalText').textContent = i.description;
@@ -64,6 +65,7 @@ document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !m
 fetch('data/portfolio.json')
   .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(function (data) { items = data; buildFilters(); render('All'); })
-  .catch(function () {
-    gallery.innerHTML = '<p>Could not load the portfolio. Run the site through a local server (see README).</p>';
+  .catch(function (err) {
+    console.error(err);
+    gallery.innerHTML = '<p>Could not load the portfolio. Check data/portfolio.json and the console (F12).</p>';
   });
