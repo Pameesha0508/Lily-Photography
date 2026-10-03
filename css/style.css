@@ -38,11 +38,11 @@ a{color:var(--accent)}
 
 .hero h1{animation:rise .9s ease-out both}
 .hero p,.hero .btn-row{animation:rise .9s .2s ease-out both}
-.hero-art{background:url("./images/Breakwater.jpg")}
+.hero-art{background:url("../images/Home.jpg") center / cover no-repeat}
 
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 .card{padding:1.4rem}
-.cta{text-align:center} .cta p{margin-inline:auto} 
+.cta{text-align:center} .cta p{margin-inline:auto}
 .card.work{padding:0;overflow:hidden;transition:transform .25s}
 .card.work:hover{transform:translateY(-4px)}
 .work-art{display:block;width:100%;border:0;aspect-ratio:4/3;cursor:pointer;padding:0}
