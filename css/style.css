@@ -37,7 +37,7 @@ a{color:var(--accent)}
 .btn.ghost{background:var(--glass);color:var(--ink);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
 .hero h1{animation:rise .9s ease-out both}
 .hero p,.hero .btn-row{animation:rise .9s .2s ease-out both}
-.hero-art{background:linear-gradient(180deg,#1b3b5a 0%,#5c7c8a 40%,#ff9a76 75%,#ffd27a 100%);padding:0}
+.hero-art{background:url(../images.main.jpg) center / no repeat}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 .card{padding:1.4rem}
 .cta{text-align:center} .cta p{margin-inline:auto}
