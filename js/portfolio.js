@@ -3,6 +3,8 @@ var gallery = document.getElementById('gallery');
 var filters = document.getElementById('filters');
 var modal = document.getElementById('modal');
 var items = [], lastFocus = null, current = null;
+var closeBtn = document.getElementById('modalClose');
+closeBtn.style.zIndex = '5'; // keep the close button above the photo
 
 function art(item) {
   if (item.image && /^(images\/|data:image\/)/.test(item.image)) {
