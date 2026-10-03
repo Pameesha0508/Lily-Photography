@@ -1,13 +1,8 @@
 [
- {"id":1,"title":"Stilt Fishermen at Dawn","category":"Coastline","year":2024,"location":"Koggala","image":"Fisher-Men.jpeg","colors":["#f2a65a","#1f4e5f"],"description":"Four poles, one line of light. Shot 20 minutes before sunrise on a calm morning."},
- 
- {"id":2,"title":"Breakwater, Pre-Storm","category":"Coastline","year":2023,"location":"Galle","colors":["#5c7c8a","#14262b"],"description":"The sea turns slate an hour before the first monsoon squall."},
- 
- {"id":3,"title":"Tea Rows in Mist","category":"Hill country","year":2025,"location":"Nuwara Eliya","colors":["#9bc4a0","#2e5e4e"],"description":"Pickers vanish into fog at 6 a.m. Printed at 90 x 60 cm."},
- 
- {"id":4,"title":"Ridge Line, Horton Plains","category":"Hill country","year":2024,"location":"Horton Plains","colors":["#c9d6df","#51697a"],"description":"Layered ridges seen from World's End before the clouds roll in."},
- 
- {"id":5,"title":"Lobby Series","category":"Commissions","year":2025,"location":"Colombo","colors":["#e9b44c","#6b3f2a"],"description":"Interior and detail work for a boutique hotel, delivered in 14 days."},
- 
- {"id":6,"title":"Harbour Nets","category":"Commissions","year":2023,"location":"Negombo","colors":["#d96c5f","#2b3a55"],"description":"Editorial series for a food and travel magazine."}
+ {"id":1,"title":"Stilt Fishermen at Dawn","category":"Coastline","year":2024,"location":"Koggala","image":"images/Fisher-Men.jpg","alt":"Fishermen on wooden stilts at sunrise","colors":["#f2a65a","#1f4e5f"],"description":"Four poles, one line of light. Shot 20 minutes before sunrise on a calm morning."},
+ {"id":2,"title":"Breakwater, Pre-Storm","category":"Coastline","year":2023,"location":"Galle","image":"images/Breakwater.jpg","alt":"Stone breakwater under a dark sky","colors":["#5c7c8a","#14262b"],"description":"The sea turns slate an hour before the first monsoon squall."},
+ {"id":3,"title":"Tea Rows in Mist","category":"Hill country","year":2025,"location":"Nuwara Eliya","image":"images/TeaRow-Mist.jpg","alt":"Rows of tea bushes in morning fog","colors":["#9bc4a0","#2e5e4e"],"description":"Pickers vanish into fog at 6 a.m. Printed at 90 x 60 cm."},
+ {"id":4,"title":"Ridge Line, Horton Plains","category":"Hill country","year":2024,"location":"Horton Plains","image":"images/Horton-Place.jpg","alt":"Layered mountain ridges at dawn","colors":["#c9d6df","#51697a"],"description":"Layered ridges seen from World's End before the clouds roll in."},
+ {"id":5,"title":"Lobby Series","category":"Commissions","year":2025,"location":"Colombo","image":"images/Lobby-Series.jpg","alt":"Hotel lobby interior","colors":["#e9b44c","#6b3f2a"],"description":"Interior and detail work for a boutique hotel, delivered in 14 days."},
+ {"id":6,"title":"Harbour Nets","category":"Commissions","year":2023,"location":"Negombo","image":"images/Harbour-Nets.jpg","alt":"Fishing nets drying at a harbour","colors":["#d96c5f","#2b3a55"],"description":"Editorial series for a food and travel magazine."}
 ]
