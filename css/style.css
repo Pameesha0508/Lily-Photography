@@ -38,7 +38,7 @@ a{color:var(--accent)}
 
 .hero h1{animation:rise .9s ease-out both}
 .hero p,.hero .btn-row{animation:rise .9s .2s ease-out both}
-.hero-art{background:url("./images/Home.jpg") center / cover no-repeat}
+.hero-art{background:url("./images/Home.jpg") center}
 
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 .card{padding:1.4rem}
