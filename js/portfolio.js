@@ -4,7 +4,12 @@ var filters = document.getElementById('filters');
 var modal = document.getElementById('modal');
 var items = [], lastFocus = null;
 
-function art(c) { return 'linear-gradient(160deg,' + c[0] + ',' + c[1] + ')'; }
+function art(item) {
+  if (item.image) {
+    return 'url("' + item.image + '") center / cover no-repeat';
+  }
+  return 'linear-gradient(160deg,' + item.colors[0] + ',' + item.colors[1] + ')';
+}
 
 function render(category) {
   gallery.innerHTML = '';
@@ -13,7 +18,10 @@ function render(category) {
       var b = document.createElement('button');
       b.className = 'card work';
       b.innerHTML = '<div class="work-art"></div><div class="work-info"><h3></h3><p class="meta"></p></div>';
-      b.querySelector('.work-art').style.background = art(i.colors);
+      var cardArt = b.querySelector('.work-art');
+          cardArt.style.background = art(i);
+          cardArt.setAttribute('role', 'img');
+          cardArt.setAttribute('aria-label', i.alt || i.title);
       b.querySelector('h3').textContent = i.title;
       b.querySelector('.meta').textContent = i.category + ', ' + i.year;
       b.addEventListener('click', function () { openModal(i); });
