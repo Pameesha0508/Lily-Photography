@@ -1,4 +1,4 @@
-# Lina Fernando Photography: Interactive Web Portfolio
+# Lily Fernando Photography: Interactive Web Portfolio
 
 Group project for a fictional client, a Sri Lankan landscape photographer. A multi-page, responsive site built with HTML, CSS and JavaScript only.
 
